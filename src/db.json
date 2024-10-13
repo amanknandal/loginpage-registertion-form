@@ -1,0 +1,64 @@
+[
+    {
+        "un_id": "20240723141904540172",
+        "ft_name": "ram",
+        "email_id": "ram@abc.com",
+        "pass": "123",
+        "option": {
+            "Allow To Send Email": 1,
+            "Editing": "",
+            "Bold": 1,
+            "Underline": 1,
+            "Italic": 1,
+            "Font": 1,
+            "Font Color": 1,
+            "Attachment": "",
+            "Video": 1,
+            "Img": 1,
+            "pdf": 0
+        },
+        "mobile_no": "1237891239"
+    },
+    {
+        "un_id": "20240723175431993161",
+        "ft_name": "yashvardhan",
+        "email_id": "yashvardhan\n@abc.com",
+        "pass": "qewqw",
+        "option": {
+            "Allow To Send Email": 1,
+            "Editing": "",
+            "Bold": 1,
+            "Underline": 1,
+            "Italic": 0,
+            "Font": 1,
+            "Font Color": 0,
+            "highlight": 0,
+            "Attachment": "",
+            "Video": 0,
+            "Img": 0,
+            "pdf": 0
+        },
+        "mobile_no": "9810779611"
+    },
+    {
+        "un_id": "20240807103607831203",
+        "ft_name": "sam",
+        "email_id": "sam@abc.com",
+        "pass": "123",
+        "option": {
+            "Allow To Send Email": 1,
+            "Editing": "",
+            "Bold": 1,
+            "Underline": 1,
+            "Italic": 1,
+            "Font": 1,
+            "Font Color": 1,
+            "highlight": 1,
+            "Attachment": "",
+            "Video": 1,
+            "Img": 1,
+            "pdf": 1
+        },
+        "mobile_no": "1231231231"
+    }
+]

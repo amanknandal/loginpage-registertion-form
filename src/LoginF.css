@@ -87,3 +87,11 @@
     text-decoration: underline;
 }
 
+
+.samePassword{
+    position: relative;
+    margin: 15px;
+    margin-top:-23px;
+    margin-left:0px;
+    color: rgb(249, 42, 42);
+}

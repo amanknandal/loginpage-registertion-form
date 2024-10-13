@@ -163,7 +163,8 @@ function Login() {
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
               </div>
-              {error && <div className='error'>{error}</div>} {/* Display error message */}
+                  {error && <div className='samePassword'>{error}</div>} {/* Display error message */}
+                  
               <div className='remember-forgot'>
                 <label><input type="checkbox" />I agree to the terms & conditions</label>
               </div>
