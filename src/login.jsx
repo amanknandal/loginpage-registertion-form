@@ -32,24 +32,20 @@ function Login() {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isForgotPassword) {
-      // Validate if new password and confirm password match
       if (password !== confirmPassword) {
         setError('Passwords do not match');
       } else {
         setError('');
-        // Handle forgot password logic here
         console.log("Resetting password for:", email);
         console.log("New password:", password);
       }
     } else if (isLogin) {
-      // Handle login logic here
       console.log("Logging in with:", password);
     } else {
       if (password !== confirmPassword) {
         setError('Passwords do not match');
       } else {
         setError('');
-        // Handle registration logic here
         console.log("Registering with:", password);
       }
     }
@@ -63,21 +59,21 @@ function Login() {
           {isForgotPassword ? (
             <>
               <div className='input-box'>
-                <input 
-                  type="email" 
-                  placeholder='Enter your email' 
-                  required 
-                  value={email} 
-                  onChange={(e) => setEmail(e.target.value)} 
+                <input
+                  type="email"
+                  placeholder='Enter your email'
+                  required
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
                 <FaEnvelope className='icon' />
               </div>
               <div className='input-box'>
-                <input 
+                <input
                   type={showPassword ? "text" : "password"}
                   placeholder='New Password'
-                  required 
-                  value={password} 
+                  required
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <span onClick={togglePasswordVisibility} className='icon'>
@@ -85,18 +81,18 @@ function Login() {
                 </span>
               </div>
               <div className='input-box'>
-                <input 
+                <input
                   type={showPassword ? "text" : "password"}
                   placeholder='Confirm New Password'
-                  required 
-                  value={confirmPassword} 
+                  required
+                  value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
                 <span onClick={togglePasswordVisibility} className='icon'>
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
               </div>
-              {error && <div className='error'>{error}</div>} {/* Display error message */}
+              {error && <div className='samePassword'>{error}</div>}
               <div><button type='submit'>Reset Password</button></div>
               <div className='register-link'>
                 <p>Remembered your password? <a href="#" onClick={() => { setIsForgotPassword(false); setIsLogin(true); }}>Login</a></p>
@@ -109,11 +105,11 @@ function Login() {
                 <FaUser className='icon' />
               </div>
               <div className='input-box'>
-                <input 
+                <input
                   type={showPassword ? "text" : "password"}
                   placeholder='Password'
-                  required 
-                  value={password} 
+                  required
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <span onClick={togglePasswordVisibility} className='icon'>
@@ -140,11 +136,11 @@ function Login() {
                 <FaEnvelope className='icon' />
               </div>
               <div className='input-box'>
-                <input 
+                <input
                   type={showPassword ? "text" : "password"}
                   placeholder='Password'
-                  required 
-                  value={password} 
+                  required
+                  value={password}
                   onChange={(e) => setPassword(e.target.value)}
                 />
                 <span onClick={togglePasswordVisibility} className='icon'>
@@ -152,19 +148,18 @@ function Login() {
                 </span>
               </div>
               <div className='input-box'>
-                <input 
+                <input
                   type={showPassword ? "text" : "password"}
                   placeholder='Confirm Password'
-                  required 
-                  value={confirmPassword} 
+                  required
+                  value={confirmPassword}
                   onChange={(e) => setConfirmPassword(e.target.value)}
                 />
                 <span onClick={togglePasswordVisibility} className='icon'>
                   {showPassword ? <FaEyeSlash /> : <FaEye />}
                 </span>
               </div>
-                  {error && <div className='samePassword'>{error}</div>} {/* Display error message */}
-                  
+              {error && <div className='samePassword'>{error}</div>}
               <div className='remember-forgot'>
                 <label><input type="checkbox" />I agree to the terms & conditions</label>
               </div>
